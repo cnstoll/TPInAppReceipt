@@ -142,6 +142,11 @@ public extension InAppReceipt
 		return rawData.base64EncodedString()
     }
     
+    var environment: String
+    {
+        return payload.environment
+    }
+    
     /// Return original transaction identifier if there is a purchase for a specific product identifier
     ///
     /// - parameter productIdentifier: Product name
